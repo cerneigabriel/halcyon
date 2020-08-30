@@ -4,6 +4,11 @@ $(".banner_wrapper").slick({
   autoplaySpeed: 5000,
 });
 
+$(".slick_slider").slick({
+  dots: true,
+  arrows: false,
+});
+
 $(document).ready(function () {
   $(".image_link").magnificPopup({ type: "image" });
 });
