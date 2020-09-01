@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,72 +9,95 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
+    <div id="top"></div>
     <div class="banner">
       <div class="navbar">
         <div class="container">
-          <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+          <div class="row justify-content-end">
+            <div class="px-4">
+              <button type="button" class="button navbar_open">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <ul class="navbar_menu">
-          <li class="item">
-            <a href="#about">About</a>
-          </li>
-          <li class="item">
-            <a href="#blog">Blog</a>
-          </li>
-          <li class="item">
-            <a href="#team">Team</a>
-          </li>
-          <li class="item">
-            <a href="#contact_us">Contact Us</a>
-          </li>
-        </ul>
+        <nav class="navbar_nav">
+          <button type="button" class="button navbar_close">
+            <i class="fas fa-times"></i>
+          </button>
+
+          <ul class="navbar_menu">
+            <li class="item">
+              <div class="input_group">
+                <input
+                  type="text"
+                  class="input light"
+                  placeholder="Search..."
+                />
+                <button type="button" class="button secondary small">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#about_section">About</a>
+            </li>
+            <li class="item">
+              <a href="#blog_section">Blog</a>
+            </li>
+            <li class="item">
+              <a href="#team_section">Team</a>
+            </li>
+            <li class="item">
+              <a href="#contact_us_section">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="banner_wrapper">
         <div class="item">
           <img src="./images/banners/banner_1.png" alt="" />
           <div class="content">
-            <h1 class="banner_title"><span>halcyon</span>days</h1>
+            <h1 class="banner_title"><span>halcyon</span> days</h1>
             <p class="banner_description">
               An exclusive HTML5/CSS3 freebie by Peter Finlan, for
               <span>Codrops</span>.
             </p>
 
-            <button type="button" class="button primary">
+            <button type="button" class="button primary_featured big">
               Learn More
-              <div class="botton_shadow"></div>
+              <span class="botton_shadow"></span>
             </button>
           </div>
         </div>
         <div class="item">
           <img src="./images/banners/banner_1.png" alt="" />
           <div class="content">
-            <h1 class="banner_title"><span>halcyon</span>days</h1>
+            <h1 class="banner_title"><span>halcyon</span> days</h1>
             <p class="banner_description">
               An exclusive HTML5/CSS3 freebie by Peter Finlan, for
               <span>Codrops</span>.
             </p>
 
-            <button type="button" class="button primary">
+            <button type="button" class="button primary_featured big">
               Learn More
-              <div class="botton_shadow"></div>
+              <span class="botton_shadow"></span>
             </button>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="section grey">
+    <section id="about_section" class="section bg_grey">
       <div class="container">
-        <div class="heading">
-          <h2 class="heading_title">a creative portfolio template</h2>
-          <div class="heading_divider"></div>
-        </div>
         <div class="row justify-content-center">
-          <div class="col-md-8 p-0">
+          <div class="col-lg-12 p-3">
+            <div class="heading">
+              <h2 class="heading_title">a creative portfolio template</h2>
+              <div class="heading_divider"></div>
+            </div>
+          </div>
+          <div class="col-md-8 p-3">
             <p class="text_center">
               Sed a lorem quis neque interdum
               <span class="highlight">consequat ut sed sem</span>. Duis quis
@@ -92,15 +115,19 @@
 
     <section class="section">
       <div class="container">
-        <div class="heading">
-          <h2 class="heading_title">love what you do, and you'll do it well</h2>
-          <div class="heading_divider"></div>
-        </div>
         <div class="row justify-content-center">
-          <div class="col-lg-4 py-3 py-lg-0">
+          <div class="col-lg-12 p-3">
+            <div class="heading">
+              <h2 class="heading_title">
+                love what you do, and you'll do it well
+              </h2>
+              <div class="heading_divider"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_1.svg" alt="" width="157px" />
+                <img src="./images/cards/card_1.svg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">DIGITAL DESIGN //</div>
@@ -115,10 +142,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3 py-lg-0">
+          <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_2.svg" alt="" width="157px" />
+                <img src="./images/cards/card_2.svg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">WEB DEVELOPMENT //</div>
@@ -133,10 +160,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3 py-lg-0">
+          <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_3.svg" alt="" width="157px" />
+                <img src="./images/cards/card_3.svg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">WE LOVE YOU //</div>
@@ -158,10 +185,10 @@
     <section>
       <div class="container-fluid p-0">
         <div class="row m-0">
-          <div class="col-lg-6 p-0">
+          <div class="col-xl-6 col-lg-4 col-md-2 p-0 crop_image">
             <img src="./images/banners/banner_2.png" alt="" />
           </div>
-          <div class="col-lg-6 p-0">
+          <div class="col-xl-6 col-lg-8 col-md-10 px-3">
             <div class="section">
               <div class="row m-0 justify-content-center">
                 <div class="col-md-8">
@@ -185,7 +212,7 @@
 
                           Etiam eget libero et erat eleifend consectetur a nec
                           lectus. Sed id tellus lorem. Suspendisse sed venenatis
-                          odio, quis lobortis eros.
+                          odio, quis lobortis eros. <br /><br /><br />
                         </p>
                       </div>
                       <div class="item">
@@ -206,7 +233,7 @@
 
                           Etiam eget libero et erat eleifend consectetur a nec
                           lectus. Sed id tellus lorem. Suspendisse sed venenatis
-                          odio, quis lobortis eros.
+                          odio, quis lobortis eros. <br /><br /><br />
                         </p>
                       </div>
                       <div class="item">
@@ -227,7 +254,7 @@
 
                           Etiam eget libero et erat eleifend consectetur a nec
                           lectus. Sed id tellus lorem. Suspendisse sed venenatis
-                          odio, quis lobortis eros.
+                          odio, quis lobortis eros. <br /><br /><br />
                         </p>
                       </div>
                     </div>
@@ -241,34 +268,30 @@
       </div>
     </section>
 
-    <section class="section section_small">
+    <section class="section_small">
       <div class="section_bg">
         <img src="./images/banners/banner_3.png" alt="" />
       </div>
       <div class="container text_white text_center">
         <div class="row flex-column align-items-center">
-          <div class="col">
-            <h1 class="text_big_1">I GOT 99 PROBLEMS</h1>
-          </div>
-          <div class="col">
-            <h1 class="text_big_2">
-              BUT <b><i>DESIGN</i></b> ‘AINT ONE
-            </h1>
-          </div>
-          <div class="col pt-5">
-            <button type="button" class="button scroll_down">
+          <h2 class="display_1">I GOT 99 PROBLEMS</h2>
+          <h2 class="display_2">
+            BUT <b><i>DESIGN</i></b> ‘AINT ONE
+          </h2>
+          <div class="row justify-content-center pt-5">
+            <a href="#blog_section" class="button circle primary medium">
               <i class="fas fa-angle-down"></i>
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section id="blog_section" class="section">
       <div class="container">
         <div id="slick_slider_blog">
           <div class="slick_slider">
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -279,7 +302,7 @@
                     />
                     <a href="./images/cards/card_4.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -293,7 +316,7 @@
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -304,7 +327,7 @@
                     />
                     <a href="./images/cards/card_5.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -318,7 +341,7 @@
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -329,7 +352,7 @@
                     />
                     <a href="./images/cards/card_6.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -343,7 +366,7 @@
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -354,7 +377,7 @@
                     />
                     <a href="./images/cards/card_4.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -368,7 +391,7 @@
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -379,7 +402,7 @@
                     />
                     <a href="./images/cards/card_5.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -393,7 +416,7 @@
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <div class="lightbox">
@@ -404,7 +427,7 @@
                     />
                     <a href="./images/cards/card_6.png" class="lightbox_link">
                       <i class="fas fa-search"></i>
-                      <h3><u>view more</u></h3>
+                      <p><u>view more</u></p>
                     </a>
                   </div>
                 </div>
@@ -424,24 +447,24 @@
       </div>
     </section>
 
-    <section class="section section_small dark">
+    <section class="section_small bg_dark">
       <div class="container">
         <div class="row justify-content-center">
-          <button type="button" class="button secondary">
+          <button type="button" class="button secondary big">
             IGNITE YOUR PASSION
           </button>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section id="team_section" class="section">
       <div class="container">
         <div id="slick_slider_team">
           <div class="slick_slider">
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" width="200px" alt="" />
+                  <img src="./images/team/john_snow.png" width="200" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
@@ -451,25 +474,25 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <img
                     src="./images/team/carsei_lannister.png"
-                    width="200px"
+                    width="200"
                     alt=""
                   />
                 </div>
@@ -481,25 +504,25 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <img
                     src="./images/team/jamie_lannister.png"
-                    width="200px"
+                    width="200"
                     alt=""
                   />
                 </div>
@@ -511,23 +534,23 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" width="200px" alt="" />
+                  <img src="./images/team/john_snow.png" width="200" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
@@ -537,25 +560,25 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <img
                     src="./images/team/carsei_lannister.png"
-                    width="200px"
+                    width="200"
                     alt=""
                   />
                 </div>
@@ -567,25 +590,25 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item p-3">
+            <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
                   <img
                     src="./images/team/jamie_lannister.png"
-                    width="200px"
+                    width="200"
                     alt=""
                   />
                 </div>
@@ -597,13 +620,13 @@
                     non adipiscing libero.
                   </p>
                   <div class="row justify-content-center">
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="button follow m-1">
+                    <a href="" class="button circle m-1">
                       <i class="fas fa-envelope"></i>
                     </a>
                   </div>
@@ -616,33 +639,156 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="contact_us_section" class="section">
       <div class="section_bg">
         <img src="./images/banners/banner_4.png" alt="" />
       </div>
-      <div class="container text_white">
-        <div class="d-flex align-items-center flex-column">
-          <h1 class="mb-4"><i class="fas fa-paper-plane"></i></h1>
-          <h6 class="mb-5">SUBSCRIBE TO STAY IN THE LOOP</h6>
-          <div class="col-12">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="row">
-                  <input type="text" class="col input light" />
-                  <button type="button" class="button primary_square ml-1">
+
+      <div class="container text_white text_center">
+        <h1 class="mb-4"><i class="fas fa-paper-plane"></i></h1>
+        <h6 class="mb-5">Subscribe to stay in the loop</h6>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 p-3 input_group">
+            <input type="text" class="input light big" />
+            <button type="button" class="button primary big">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="#top" class="button circle primary big scroll_direction_up">
+        <i class="fas fa-angle-up"></i>
+      </a>
+    </section>
+
+    <section class="section bg_grey">
+      <div class="container">
+        <div class="heading">
+          <h2 class="heading_title">Drop us a line</h2>
+          <div class="heading_divider"></div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-4">
+            <div class="card bg_white p-4">
+              <i class="fas fa-map-marker-alt mb-3"></i>
+              <h6 class="text_primary mb-3"><b>address</b></h6>
+              <p>Level 6, 23 Pitt St, Sydney</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg_white p-4">
+              <i class="fas fa-mobile-alt mb-3"></i>
+              <h6 class="text_primary mb-3"><b>phone</b></h6>
+              <a href="tel:+6192113741"><p>+61 9 211 3741</p></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg_white p-4">
+              <i class="fas fa-paper-plane mb-3"></i>
+              <h6 class="text_primary mb-3"><b>email</b></h6>
+              <a href="mailto:hey@halcyon.com.au"
+                ><p class="text_dark">hey@halcyon.com.au</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+          <a href="" class="button circle m-1">
+            <i class="fab fa-dribbble"></i>
+          </a>
+          <a href="" class="button circle m-1">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="button circle m-1">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="heading">
+          <h2 class="heading_title">Keep in touch</h2>
+          <div class="heading_divider"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 p-3">
+            <form id="send_mail_form" action="/send_mail" method="POST">
+              <div class="row mb-2">
+                <div class="col-sm-6">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" class="input dark" type="text" />
+                </div>
+                <div class="col-sm-6">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    class="input dark"
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-12">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    class="input dark"
+                    type="email"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="input dark"
+                    id="message"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="p-3">
+                  <button type="submit" class="button primary small">
                     Send
                   </button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 p-3">
+            <p>
+              <a href="">Terms & Conditions</a>
+              <span class="text_white">|</span> <a href="">Legals</a>
+            </p>
+          </div>
+
+          <div class="col-lg-6 p-3">
+            <p>
+              <span class="text_white">Designed & Developed by</span> Peter
+              Finlan <span class="text_white">exclusively for</span> Codrops
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="./vendors/jquery/jquery.min.js"></script>
     <script src="./vendors/slick/slick.min.js"></script>
     <script src="./vendors/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./vendors/sweetAlert2/dist/sweetalert2.all.min.js"></script>
 
     <script src="./js/app.js"></script>
   </body>

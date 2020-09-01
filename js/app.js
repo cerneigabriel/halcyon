@@ -1,3 +1,15 @@
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  onOpen: (toast) => {
+    toast.addEventListener("mouseenter", Swal.stopTimer);
+    toast.addEventListener("mouseleave", Swal.resumeTimer);
+  },
+});
+
 $(".banner_wrapper").slick({
   arrows: false,
   autoplay: true,
@@ -62,11 +74,6 @@ $("#slick_slider_team .slick_slider").slick({
   ],
 });
 
-$(document).on("click", ".hamburger", function () {
-  $(this).toggleClass("is-active");
-  $(".navbar_menu").toggleClass("active");
-});
-
 $(".lightbox_link").magnificPopup({
   type: "image",
   zoom: {
@@ -78,3 +85,66 @@ $(".lightbox_link").magnificPopup({
     },
   },
 });
+
+$(document).on("click", ".navbar_open", function () {
+  $(".navbar_nav").addClass("active");
+});
+
+$(document).on("click", ".navbar_close", function () {
+  $(".navbar_nav").removeClass("active");
+});
+
+$(document).on("click", ".navbar_menu > .item > a", function () {
+  $(".navbar_nav").removeClass("active");
+});
+
+document.querySelector("#send_mail_form").onsubmit = async (event) => {
+  event.preventDefault();
+
+  var formData = new FormData(document.querySelector("#send_mail_form"));
+  var action = document.querySelector("#send_mail_form").getAttribute("action");
+  var method = document.querySelector("#send_mail_form").getAttribute("method");
+
+  var errors = [];
+
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ", " + pair[1]);
+    if (pair[1] === undefined || pair[1] === null || pair[1] === "") {
+      errors.push(`Type something in ${pair[0]} field`);
+    }
+  }
+
+  if (errors.length === 0) {
+    // let response = await fetch(action, {
+    //   method: method,
+    //   body: formData,
+    // });
+
+    // response
+    //   .then((res) => {
+    //     console.log(res);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //     Toast.fire({
+    //       icon: "error",
+    //       title: "Something went wrong",
+    //     });
+    //   });
+
+    Toast.fire({
+      icon: "success",
+      title: "Mail was sent",
+      onDestroy: () => {
+        for (var pair of formData.entries()) {
+          $(`#send_mail_form [name="${pair[0]}"]`).val("").html("");
+        }
+      },
+    });
+  } else {
+    Toast.fire({
+      icon: "error",
+      title: "Check for correctness",
+    });
+  }
+};

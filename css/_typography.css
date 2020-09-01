@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "GothamRounded";
   font-style: normal;
@@ -24,4 +31,45 @@
   font-style: italic;
   font-weight: 500;
   src: url("../fonts/GothamRounded-MediumItalic.otf") format("opentype");
+}
+
+p {
+  color: var(--text_color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.25px;
+}
+
+p > .highlight {
+  color: var(--heading_color);
+  font-size: inherit;
+}
+
+h1,
+.h1 {
+  font-size: 25px;
+}
+
+h6,
+.h6 {
+  font-size: 15px;
+  letter-spacing: 2.25px;
+  text-transform: uppercase;
+}
+
+.display_1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.display_2 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
 }

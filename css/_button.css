@@ -1,0 +1,173 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.button {
+  position: relative;
+  border: 0;
+  outline: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+.button:focus {
+  -webkit-box-shadow: 0 0 0 3px #44e4cc;
+  box-shadow: 0 0 0 3px #44e4cc;
+}
+
+/* Button primary */
+.button.primary {
+  background-color: var(--accent_color);
+  padding: 25px;
+  color: var(--white_color);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+}
+
+.button.primary_featured {
+  color: var(--white_color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+  padding: 22px 36px;
+  border-radius: 6px;
+}
+
+.button.primary_featured:before,
+.button.primary_featured:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.button.primary_featured::before {
+  background-color: #309383;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.button.primary_featured::after {
+  background-color: var(--accent_color);
+}
+
+.button.primary_featured:hover::before {
+  -webkit-transform: translateY(5px) translateX(3px);
+  -ms-transform: translateY(5px) translateX(3px);
+  transform: translateY(5px) translateX(3px);
+}
+
+/* Button secondary */
+
+.button.secondary {
+  border: 1px solid var(--white_color);
+  background: transparent;
+  color: var(--white_color);
+  text-transform: uppercase;
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  padding: 28px 25px;
+  letter-spacing: 2.25px;
+}
+
+.button.secondary:hover {
+  background: var(--white_color);
+  color: #282828;
+}
+
+/* Button circle */
+.button.circle {
+  width: 45px;
+  height: 45px;
+  color: var(--white_color);
+  background-color: var(--dark_color);
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 200px;
+}
+
+.button.circle:hover {
+  background-color: var(--accent_color);
+}
+
+.button.circle.primary {
+  background-color: var(--accent_color);
+}
+
+/* Button sizes */
+.button.circle.small {
+  width: 40px;
+  height: 40px;
+}
+
+.button.circle.medium {
+  width: 45px;
+  height: 45px;
+}
+
+.button.circle.big {
+  width: 50px;
+  height: 50px;
+}
+
+.button.small {
+  padding: 1rem;
+}
+
+.button.medium {
+  padding: 20px 1rem;
+}
+
+.button.big {
+  padding: 25px 1.5rem;
+}
+
+/* Scroll Direction */
+.scroll_direction_up {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.scroll_direction_up:hover {
+  opacity: 1;
+}

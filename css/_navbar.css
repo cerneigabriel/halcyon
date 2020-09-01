@@ -1,0 +1,88 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  right: 0;
+  z-index: 9;
+}
+
+.navbar .navbar_open {
+  display: block;
+  margin-left: auto;
+  font-size: 30px;
+}
+
+.navbar .navbar_close {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  font-size: 30px;
+  color: var(--white_color);
+}
+
+.navbar_nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  overflow-x: hidden;
+  background-color: var(--accent_color);
+  z-index: 99;
+  -webkit-transition: width 0.4s linear;
+  -o-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+.navbar_nav.active {
+  width: 100%;
+}
+
+.navbar_menu {
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.navbar_menu > .item {
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+
+.navbar_menu > .item a {
+  color: var(--white_color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.navbar_menu > .item:hover a {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 990px) {
+  .navbar_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

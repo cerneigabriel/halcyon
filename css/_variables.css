@@ -1,0 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+  --accent_color: #3dc9b3;
+  --text_color: #8c9398;
+  --white_color: #ffffff;
+  --dark_color: #242830;
+  --heading_color: #353535;
+  --light_grey_color: #f3f5f8;
+}

@@ -1,0 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.slick_dots {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+.slick_dots .slick-dots {
+  position: relative;
+}
+
+.slick_dots button[role="tab"] {
+  width: 13px;
+  height: 13px;
+}
+
+.slick_dots button[role="tab"]::before {
+  content: "";
+  /* Style for "Shape 7" */
+  width: inherit;
+  height: inherit;
+  border: 2px solid #c9cbca;
+  background-color: var(--white_color);
+  border-radius: 13px;
+  opacity: 1;
+}
+
+.slick_dots .slick-active button[role="tab"]::before {
+  background-color: #212024;
+}
