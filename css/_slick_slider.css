@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .slick_dots {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -22,7 +15,6 @@
 
 .slick_dots button[role="tab"]::before {
   content: "";
-  /* Style for "Shape 7" */
   width: inherit;
   height: inherit;
   border: 2px solid #c9cbca;

@@ -1,21 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .button {
   position: relative;
   border: 0;
   outline: 0;
   z-index: 1;
   background: transparent;
-}
-
-.button:focus {
-  -webkit-box-shadow: 0 0 0 3px #44e4cc;
-  box-shadow: 0 0 0 3px #44e4cc;
 }
 
 /* Button primary */
@@ -141,7 +129,7 @@
 }
 
 .button.small {
-  padding: 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .button.medium {

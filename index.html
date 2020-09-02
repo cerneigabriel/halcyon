@@ -10,7 +10,8 @@
   </head>
   <body>
     <div id="top"></div>
-    <div class="banner">
+
+    <div class="header">
       <div class="navbar">
         <div class="container">
           <div class="row justify-content-end">
@@ -21,7 +22,7 @@
             </div>
           </div>
         </div>
-        <nav class="navbar_nav">
+        <div class="navbar_nav">
           <button type="button" class="button navbar_close">
             <i class="fas fa-times"></i>
           </button>
@@ -31,7 +32,7 @@
               <div class="input_group">
                 <input
                   type="text"
-                  class="input light"
+                  class="input light small"
                   placeholder="Search..."
                 />
                 <button type="button" class="button secondary small">
@@ -52,14 +53,14 @@
               <a href="#contact_us_section">Contact Us</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-      <div class="banner_wrapper">
+      <div id="header_slick_slider" class="header_wrapper">
         <div class="item">
-          <img src="./images/banners/banner_1.png" alt="" />
+          <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
-            <h1 class="banner_title"><span>halcyon</span> days</h1>
-            <p class="banner_description">
+            <h1 class="header_title"><span>halcyon</span> days</h1>
+            <p class="header_description">
               An exclusive HTML5/CSS3 freebie by Peter Finlan, for
               <span>Codrops</span>.
             </p>
@@ -71,10 +72,10 @@
           </div>
         </div>
         <div class="item">
-          <img src="./images/banners/banner_1.png" alt="" />
+          <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
-            <h1 class="banner_title"><span>halcyon</span> days</h1>
-            <p class="banner_description">
+            <h1 class="header_title"><span>halcyon</span> days</h1>
+            <p class="header_description">
               An exclusive HTML5/CSS3 freebie by Peter Finlan, for
               <span>Codrops</span>.
             </p>
@@ -88,7 +89,7 @@
       </div>
     </div>
 
-    <section id="about_section" class="section bg_grey">
+    <div id="about_section" class="section bg_grey">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 p-3">
@@ -111,9 +112,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
+    <div class="section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 p-3">
@@ -127,7 +128,7 @@
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_1.svg" alt="" width="157" />
+                <img src="./images/cards/card_1.jpg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">DIGITAL DESIGN //</div>
@@ -145,7 +146,7 @@
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_2.svg" alt="" width="157" />
+                <img src="./images/cards/card_2.jpg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">WEB DEVELOPMENT //</div>
@@ -163,7 +164,7 @@
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_3.svg" alt="" width="157" />
+                <img src="./images/cards/card_3.jpg" alt="" width="157" />
               </div>
               <div class="card_content">
                 <div class="card_title">WE LOVE YOU //</div>
@@ -180,13 +181,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
+    <div>
       <div class="container-fluid p-0">
         <div class="row m-0">
           <div class="col-xl-6 col-lg-4 col-md-2 p-0 crop_image">
-            <img src="./images/banners/banner_2.png" alt="" />
+            <img src="./images/banners/banner_2.jpg" alt="" />
           </div>
           <div class="col-xl-6 col-lg-8 col-md-10 px-3">
             <div class="section">
@@ -266,28 +267,30 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section_small">
+    <div class="section_small">
       <div class="section_bg">
-        <img src="./images/banners/banner_3.png" alt="" />
+        <img src="./images/banners/banner_3.jpg" alt="" />
       </div>
       <div class="container text_white text_center">
         <div class="row flex-column align-items-center">
-          <h2 class="display_1">I GOT 99 PROBLEMS</h2>
-          <h2 class="display_2">
-            BUT <b><i>DESIGN</i></b> ‘AINT ONE
-          </h2>
-          <div class="row justify-content-center pt-5">
-            <a href="#blog_section" class="button circle primary medium">
-              <i class="fas fa-angle-down"></i>
-            </a>
+          <div class="col p-3">
+            <h2 class="display_1 mb-4">I GOT 99 PROBLEMS</h2>
+            <h2 class="display_2 mb-5">
+              BUT <b><i>DESIGN</i></b> ‘AINT ONE
+            </h2>
+            <div class="row justify-content-center">
+              <a href="#blog_section" class="button circle primary medium">
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="blog_section" class="section">
+    <div id="blog_section" class="section">
       <div class="container">
         <div id="slick_slider_blog">
           <div class="slick_slider">
@@ -296,11 +299,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_4.png"
+                      src="./images/cards/card_4.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_4.png" class="lightbox_link">
+                    <a href="./images/cards/card_4.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -321,11 +324,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_5.png"
+                      src="./images/cards/card_5.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_5.png" class="lightbox_link">
+                    <a href="./images/cards/card_5.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -346,11 +349,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_6.png"
+                      src="./images/cards/card_6.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_6.png" class="lightbox_link">
+                    <a href="./images/cards/card_6.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -371,11 +374,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_4.png"
+                      src="./images/cards/card_4.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_4.png" class="lightbox_link">
+                    <a href="./images/cards/card_4.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -396,11 +399,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_5.png"
+                      src="./images/cards/card_5.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_5.png" class="lightbox_link">
+                    <a href="./images/cards/card_5.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -421,11 +424,11 @@
                 <div class="card_img">
                   <div class="lightbox">
                     <img
-                      src="./images/cards/card_6.png"
+                      src="./images/cards/card_6.jpg"
                       class="lightbox_image"
                       alt=""
                     />
-                    <a href="./images/cards/card_6.png" class="lightbox_link">
+                    <a href="./images/cards/card_6.jpg" class="lightbox_link">
                       <i class="fas fa-search"></i>
                       <p><u>view more</u></p>
                     </a>
@@ -445,9 +448,9 @@
           <div class="slick_dots"></div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section_small bg_dark">
+    <div class="section_small bg_dark">
       <div class="container">
         <div class="row justify-content-center">
           <button type="button" class="button secondary big">
@@ -455,9 +458,9 @@
           </button>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="team_section" class="section">
+    <div id="team_section" class="section">
       <div class="container">
         <div id="slick_slider_team">
           <div class="slick_slider">
@@ -637,15 +640,15 @@
           <div class="slick_dots"></div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact_us_section" class="section">
+    <div id="contact_us_section" class="section">
       <div class="section_bg">
-        <img src="./images/banners/banner_4.png" alt="" />
+        <img src="./images/banners/banner_4.jpg" alt="" />
       </div>
 
       <div class="container text_white text_center">
-        <h1 class="mb-4"><i class="fas fa-paper-plane"></i></h1>
+        <div class="mb-4"><i class="fas fa-paper-plane"></i></div>
         <h6 class="mb-5">Subscribe to stay in the loop</h6>
         <div class="row justify-content-center">
           <div class="col-lg-6 p-3 input_group">
@@ -658,9 +661,9 @@
       <a href="#top" class="button circle primary big scroll_direction_up">
         <i class="fas fa-angle-up"></i>
       </a>
-    </section>
+    </div>
 
-    <section class="section bg_grey">
+    <div class="section bg_grey">
       <div class="container">
         <div class="heading">
           <h2 class="heading_title">Drop us a line</h2>
@@ -703,9 +706,9 @@
           </a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
+    <div class="section">
       <div class="container">
         <div class="heading">
           <h2 class="heading_title">Keep in touch</h2>
@@ -763,9 +766,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer">
+    <div class="footer">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-6 p-3">
@@ -783,7 +786,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
     <script src="./vendors/jquery/jquery.min.js"></script>
     <script src="./vendors/slick/slick.min.js"></script>

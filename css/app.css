@@ -1,26 +1,3 @@
-/* 1. Reset */
-/* 2. Plugins */
-/*    - bootstrap */
-/*    - font awesome */
-/*    - slick slider them */
-/*    - slick slider */
-/*    - magnific popup */
-/*    - sweetalert2 */
-/* 3. Variables */
-/* 4. Default */
-/* 5. Typography */
-/* 6. Heading */
-/* 7. Banner */
-/* 8. Navbar */
-/* 9. Buttons */
-/* 10. Cards */
-/* 11. Slick Slider */
-/* 12. Lightbox */
-/* 13. Form */
-/* 14. Utilities */
-
-@import "./_reset.css";
-
 /* Plugins */
 @import "../vendors/bootstrap-4.5.2-dist/css/bootstrap-grid.min.css";
 @import "../vendors/fontawesome-free-5.14.0-web/css/all.min.css";
@@ -34,7 +11,7 @@
 @import "./_default.css";
 @import "./_typography.css";
 @import "./_heading.css";
-@import "./_banner.css";
+@import "./_header.css";
 @import "./_navbar.css";
 @import "./_button.css";
 @import "./_card.css";
@@ -42,3 +19,37 @@
 @import "./_lightbox.css";
 @import "./_form.css";
 @import "./_utilities.css";
+
+/* Responsive */
+@media only screen and (max-width: 990px) {
+  .navbar_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .input_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .input_group > *:first-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .display_1 {
+    font-size: 30px;
+  }
+
+  .display_2 {
+    font-size: 20px;
+  }
+}

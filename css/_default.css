@@ -1,14 +1,11 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 * {
   font-size: 16px;
   font-family: "GothamRounded";
   line-height: 1.5;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -29,6 +26,19 @@ span {
 i {
   font-size: inherit;
   font-style: italic;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 .section {

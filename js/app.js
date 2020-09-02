@@ -10,7 +10,7 @@ const Toast = Swal.mixin({
   },
 });
 
-$(".banner_wrapper").slick({
+$("#header_slick_slider").slick({
   arrows: false,
   autoplay: true,
   autoplaySpeed: 5000,
@@ -98,40 +98,22 @@ $(document).on("click", ".navbar_menu > .item > a", function () {
   $(".navbar_nav").removeClass("active");
 });
 
-document.querySelector("#send_mail_form").onsubmit = async (event) => {
+$("#send_mail_form").submit(function (event) {
   event.preventDefault();
 
-  var formData = new FormData(document.querySelector("#send_mail_form"));
-  var action = document.querySelector("#send_mail_form").getAttribute("action");
-  var method = document.querySelector("#send_mail_form").getAttribute("method");
+  var formData = new FormData(this);
+  var action = $(this).attr("action");
+  var method = $(this).attr("method");
 
   var errors = [];
 
   for (var pair of formData.entries()) {
-    console.log(pair[0] + ", " + pair[1]);
     if (pair[1] === undefined || pair[1] === null || pair[1] === "") {
       errors.push(`Type something in ${pair[0]} field`);
     }
   }
 
   if (errors.length === 0) {
-    // let response = await fetch(action, {
-    //   method: method,
-    //   body: formData,
-    // });
-
-    // response
-    //   .then((res) => {
-    //     console.log(res);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //     Toast.fire({
-    //       icon: "error",
-    //       title: "Something went wrong",
-    //     });
-    //   });
-
     Toast.fire({
       icon: "success",
       title: "Mail was sent",
@@ -147,4 +129,4 @@ document.querySelector("#send_mail_form").onsubmit = async (event) => {
       title: "Check for correctness",
     });
   }
-};
+});
