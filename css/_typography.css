@@ -2,7 +2,8 @@
   font-family: "GothamRounded";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/GothamRounded-Book.otf") format("opentype");
+  src: url("../fonts/GothamRounded-Book.otf") format("opentype"),
+    url("../fonts/GothamRounded-Book.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,7 +17,8 @@
   font-family: "GothamRounded";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/GothamRounded-Medium.otf") format("opentype");
+  src: url("../fonts/GothamRounded-Medium.otf") format("opentype"),
+    url("../fonts/GothamRounded-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -51,7 +53,8 @@ h6,
   text-transform: uppercase;
 }
 
-.display_1 {
+.display_1,
+.display_1 > * {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
@@ -59,7 +62,8 @@ h6,
   letter-spacing: 10px;
 }
 
-.display_2 {
+.display_2,
+.display_2 > * {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.5;

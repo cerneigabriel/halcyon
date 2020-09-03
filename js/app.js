@@ -98,6 +98,13 @@ $(document).on("click", ".navbar_menu > .item > a", function () {
   $(".navbar_nav").removeClass("active");
 });
 
+$(function () {
+  $(window).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
+
 $("#send_mail_form").submit(function (event) {
   event.preventDefault();
 

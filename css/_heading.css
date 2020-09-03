@@ -12,12 +12,13 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   max-width: 100%;
   overflow: hidden;
 }
 
-.heading_title {
+.heading_title,
+.heading_title > * {
   color: var(--heading_color);
   font-size: 15px;
   font-weight: 500;

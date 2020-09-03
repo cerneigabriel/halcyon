@@ -1,14 +1,27 @@
 .navbar {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 60px;
+  top: 0;
   right: 0;
   z-index: 9;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: all 0.3s linear;
+}
+
+.navbar.scrolled {
+  padding-top: 0;
+  background: var(--white_color);
+  box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.37);
+}
+
+.navbar.scrolled .navbar_bar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navbar .navbar_open {
   display: block;
-  margin-left: auto;
   font-size: 30px;
 }
 
@@ -54,7 +67,7 @@
 
 .navbar_menu > .item {
   position: relative;
-  padding: 1.5rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .navbar_menu > .item a {

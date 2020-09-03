@@ -37,6 +37,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  opacity: 0.9;
+}
+
 img {
   max-width: 100%;
 }

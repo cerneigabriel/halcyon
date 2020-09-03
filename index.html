@@ -11,59 +11,64 @@
   <body>
     <div id="top"></div>
 
-    <div class="header">
-      <div class="navbar">
+    <div class="navbar">
+      <div class="navbar_bar">
         <div class="container">
           <div class="row justify-content-end">
-            <div class="px-4">
+            <div class="ml-auto px-5">
               <button type="button" class="button navbar_open">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" aria-hidden="true"></i>
               </button>
             </div>
           </div>
         </div>
-        <div class="navbar_nav">
-          <button type="button" class="button navbar_close">
-            <i class="fas fa-times"></i>
-          </button>
+      </div>
+      <div class="navbar_nav">
+        <button type="button" class="button navbar_close">
+          <i class="fas fa-times"></i>
+        </button>
 
-          <ul class="navbar_menu">
-            <li class="item">
-              <div class="input_group">
+        <ul class="navbar_menu">
+          <li class="item">
+            <div class="input_group">
+              <form action="search.php" method="post">
                 <input
                   type="text"
                   class="input light small"
                   placeholder="Search..."
                 />
-                <button type="button" class="button secondary small">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </li>
-            <li class="item">
-              <a href="#about_section">About</a>
-            </li>
-            <li class="item">
-              <a href="#blog_section">Blog</a>
-            </li>
-            <li class="item">
-              <a href="#team_section">Team</a>
-            </li>
-            <li class="item">
-              <a href="#contact_us_section">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+              </form>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#about_section">About</a>
+          </li>
+          <li class="item">
+            <a href="#blog_section">Blog</a>
+          </li>
+          <li class="item">
+            <a href="#team_section">Team</a>
+          </li>
+          <li class="item">
+            <a href="#contact_us_section">Contact Us</a>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="header">
       <div id="header_slick_slider" class="header_wrapper">
         <div class="item">
           <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
-            <h1 class="header_title"><span>halcyon</span> days</h1>
-            <p class="header_description">
-              An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-              <span>Codrops</span>.
-            </p>
+            <div class="header_title">
+              <h1><span>halcyon</span> days</h1>
+            </div>
+            <div class="header_description">
+              <p>
+                An exclusive HTML5/CSS3 freebie by Peter Finlan, for
+                <span>Codrops</span>.
+              </p>
+            </div>
 
             <button type="button" class="button primary_featured big">
               Learn More
@@ -74,11 +79,15 @@
         <div class="item">
           <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
-            <h1 class="header_title"><span>halcyon</span> days</h1>
-            <p class="header_description">
-              An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-              <span>Codrops</span>.
-            </p>
+            <div class="header_title">
+              <h1><span>halcyon</span> days</h1>
+            </div>
+            <div class="header_description">
+              <p>
+                An exclusive HTML5/CSS3 freebie by Peter Finlan, for
+                <span>Codrops</span>.
+              </p>
+            </div>
 
             <button type="button" class="button primary_featured big">
               Learn More
@@ -94,21 +103,25 @@
         <div class="row justify-content-center">
           <div class="col-lg-12 p-3">
             <div class="heading">
-              <h2 class="heading_title">a creative portfolio template</h2>
+              <div class="heading_title">
+                <h2>a creative portfolio template</h2>
+              </div>
               <div class="heading_divider"></div>
             </div>
           </div>
-          <div class="col-md-8 p-3">
-            <p class="text_center">
-              Sed a lorem quis neque interdum
-              <span class="highlight">consequat ut sed sem</span>. Duis quis
-              tempor nunc. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta
-              fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget
-              bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Interdum et malesuada fames ac ante
-              ipsum primis in faucibus.
-            </p>
+          <div class="col-md-8 px-3">
+            <div class="text_center">
+              <p>
+                Sed a lorem quis neque interdum
+                <span class="highlight">consequat ut sed sem</span>. Duis quis
+                tempor nunc. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta
+                fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget
+                bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,21 +132,21 @@
         <div class="row justify-content-center">
           <div class="col-lg-12 p-3">
             <div class="heading">
-              <h2 class="heading_title">
-                love what you do, and you'll do it well
-              </h2>
+              <div class="heading_title">
+                <h2>love what you do, and you'll do it well</h2>
+              </div>
               <div class="heading_divider"></div>
             </div>
           </div>
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_1.jpg" alt="" width="157" />
+                <img src="./images/cards/card_1.svg" alt="" />
               </div>
               <div class="card_content">
                 <div class="card_title">DIGITAL DESIGN //</div>
-                <div class="card_description">
-                  <p class="text_center">
+                <div class="card_description text_center">
+                  <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     a lorem quis neque interdum consequat ut sed sem. Duis quis
                     tempor nunc. Interdum et malesuada fames ac ante ipsum
@@ -146,12 +159,12 @@
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_2.jpg" alt="" width="157" />
+                <img src="./images/cards/card_2.svg" alt="" />
               </div>
               <div class="card_content">
                 <div class="card_title">WEB DEVELOPMENT //</div>
-                <div class="card_description">
-                  <p class="text_center">
+                <div class="card_description text_center">
+                  <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     a lorem quis neque interdum consequat ut sed sem. Duis quis
                     tempor nunc. Interdum et malesuada fames ac ante ipsum
@@ -164,12 +177,12 @@
           <div class="col-lg-4 p-3 py-lg-0 px-lg-2">
             <div class="card">
               <div class="card_img">
-                <img src="./images/cards/card_3.jpg" alt="" width="157" />
+                <img src="./images/cards/card_3.svg" alt="" />
               </div>
               <div class="card_content">
                 <div class="card_title">WE LOVE YOU //</div>
-                <div class="card_description">
-                  <p class="text_center">
+                <div class="card_description text_center">
+                  <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     a lorem quis neque interdum consequat ut sed sem. Duis quis
                     tempor nunc. Interdum et malesuada fames ac ante ipsum
@@ -197,9 +210,9 @@
                     <div class="slick_slider">
                       <div class="item">
                         <div class="heading">
-                          <h2 class="heading_title">
-                            responsive design specialist
-                          </h2>
+                          <div class="heading_title">
+                            <h2>responsive design specialist</h2>
+                          </div>
                           <div class="heading_divider"></div>
                         </div>
                         <p>
@@ -218,9 +231,9 @@
                       </div>
                       <div class="item">
                         <div class="heading">
-                          <h2 class="heading_title">
-                            responsive design specialist
-                          </h2>
+                          <div class="heading_title">
+                            <h2>responsive design specialist</h2>
+                          </div>
                           <div class="heading_divider"></div>
                         </div>
                         <p>
@@ -239,9 +252,9 @@
                       </div>
                       <div class="item">
                         <div class="heading">
-                          <h2 class="heading_title">
-                            responsive design specialist
-                          </h2>
+                          <div class="heading_title">
+                            <h2>responsive design specialist</h2>
+                          </div>
                           <div class="heading_divider"></div>
                         </div>
                         <p>
@@ -276,10 +289,14 @@
       <div class="container text_white text_center">
         <div class="row flex-column align-items-center">
           <div class="col p-3">
-            <h2 class="display_1 mb-4">I GOT 99 PROBLEMS</h2>
-            <h2 class="display_2 mb-5">
-              BUT <b><i>DESIGN</i></b> ‘AINT ONE
-            </h2>
+            <div class="display_1 mb-4">
+              <h2>I GOT 99 PROBLEMS</h2>
+            </div>
+            <div class="display_2 mb-5">
+              <h2>
+                BUT <b><i>DESIGN</i></b> ‘AINT ONE
+              </h2>
+            </div>
             <div class="row justify-content-center">
               <a href="#blog_section" class="button circle primary medium">
                 <i class="fas fa-angle-down"></i>
@@ -296,151 +313,151 @@
           <div class="slick_slider">
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_4.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_4.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_4.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_4.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">CREATIVE MINDS</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_5.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_5.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_5.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_5.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">THINK ALIKE</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_6.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_6.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_6.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_6.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">PIXEL PERFECTION</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_4.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_4.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_4.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_4.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">CREATIVE MINDS</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_5.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_5.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_5.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_5.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">THINK ALIKE</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img">
-                  <div class="lightbox">
-                    <img
-                      src="./images/cards/card_6.jpg"
-                      class="lightbox_image"
-                      alt=""
-                    />
-                    <a href="./images/cards/card_6.jpg" class="lightbox_link">
-                      <i class="fas fa-search"></i>
-                      <p><u>view more</u></p>
-                    </a>
-                  </div>
+                <div class="card_img lightbox">
+                  <img
+                    src="./images/cards/card_6.jpg"
+                    class="lightbox_image"
+                    alt=""
+                  />
+                  <a href="./images/cards/card_6.jpg" class="lightbox_link">
+                    <i class="fas fa-search"></i>
+                    <p><u>view more</u></p>
+                  </a>
                 </div>
                 <div class="card_content">
                   <div class="card_title">PIXEL PERFECTION</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -467,15 +484,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" width="200" alt="" />
+                  <img src="./images/team/john_snow.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -493,19 +512,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img
-                    src="./images/team/carsei_lannister.png"
-                    width="200"
-                    alt=""
-                  />
+                  <img src="./images/team/carsei_lannister.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">CERSEI LANNISTER</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -523,19 +540,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img
-                    src="./images/team/jamie_lannister.png"
-                    width="200"
-                    alt=""
-                  />
+                  <img src="./images/team/jamie_lannister.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JAMIE LANNISTER</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -553,15 +568,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" width="200" alt="" />
+                  <img src="./images/team/john_snow.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -579,19 +596,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img
-                    src="./images/team/carsei_lannister.png"
-                    width="200"
-                    alt=""
-                  />
+                  <img src="./images/team/carsei_lannister.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">CERSEI LANNISTER</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -609,19 +624,17 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img
-                    src="./images/team/jamie_lannister.png"
-                    width="200"
-                    alt=""
-                  />
+                  <img src="./images/team/jamie_lannister.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JAMIE LANNISTER</div>
-                  <p class="card_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
-                    non adipiscing libero.
-                  </p>
+                  <div class="card_description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ultricies nulla non metus pulvinar imperdiet.
+                      Praesent non adipiscing libero.
+                    </p>
+                  </div>
                   <div class="row justify-content-center">
                     <a href="" class="button circle m-1">
                       <i class="fab fa-dribbble"></i>
@@ -649,7 +662,9 @@
 
       <div class="container text_white text_center">
         <div class="mb-4"><i class="fas fa-paper-plane"></i></div>
-        <h6 class="mb-5">Subscribe to stay in the loop</h6>
+        <div class="mb-5">
+          <h6>Subscribe to stay in the loop</h6>
+        </div>
         <div class="row justify-content-center">
           <div class="col-lg-6 p-3 input_group">
             <input type="text" class="input light big" />
@@ -666,30 +681,40 @@
     <div class="section bg_grey">
       <div class="container">
         <div class="heading">
-          <h2 class="heading_title">Drop us a line</h2>
+          <div class="heading_title">
+            <h2>Drop us a line</h2>
+          </div>
           <div class="heading_divider"></div>
         </div>
         <div class="row justify-content-center mb-5">
           <div class="col-lg-4">
             <div class="card bg_white p-4">
               <i class="fas fa-map-marker-alt mb-3"></i>
-              <h6 class="text_primary mb-3"><b>address</b></h6>
+              <div class="text_primary mb-3">
+                <h6><b>address</b></h6>
+              </div>
               <p>Level 6, 23 Pitt St, Sydney</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="card bg_white p-4">
               <i class="fas fa-mobile-alt mb-3"></i>
-              <h6 class="text_primary mb-3"><b>phone</b></h6>
-              <a href="tel:+6192113741"><p>+61 9 211 3741</p></a>
+              <div class="text_primary mb-3">
+                <h6><b>phone</b></h6>
+              </div>
+              <a href="tel:+6192113741">
+                <p>+61 9 211 3741</p>
+              </a>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="card bg_white p-4">
               <i class="fas fa-paper-plane mb-3"></i>
-              <h6 class="text_primary mb-3"><b>email</b></h6>
-              <a href="mailto:hey@halcyon.com.au"
-                ><p class="text_dark">hey@halcyon.com.au</p>
+              <div class="text_primary mb-3">
+                <h6><b>email</b></h6>
+              </div>
+              <a href="mailto:hey@halcyon.com.au">
+                <p class="text_dark">hey@halcyon.com.au</p>
               </a>
             </div>
           </div>
@@ -711,7 +736,9 @@
     <div class="section">
       <div class="container">
         <div class="heading">
-          <h2 class="heading_title">Keep in touch</h2>
+          <div class="heading_title">
+            <h2>Keep in touch</h2>
+          </div>
           <div class="heading_divider"></div>
         </div>
         <div class="row justify-content-center">
