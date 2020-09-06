@@ -1,34 +1,62 @@
 @font-face {
   font-family: "GothamRounded";
-  font-style: normal;
+  src: url("../fonts/GothamRounded-Book/") format("embedded-opentype"),
+    url("../fonts/GothamRounded-Book/GothamRounded-Book.otf") format("opentype"),
+    url("../fonts/GothamRounded-Book/GothamRounded-Book.woff") format("woff"),
+    url("../fonts/GothamRounded-Book/GothamRounded-Book.ttf") format("truetype"),
+    url("../fonts/GothamRounded-Book/GothamRounded-Book.svg#../fonts/GothamRounded-Book/GothamRounded-Book")
+      format("svg");
   font-weight: 400;
-  src: url("../fonts/GothamRounded-Book.otf") format("opentype"),
-    url("../fonts/GothamRounded-Book.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "GothamRounded";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/GothamRounded-BookItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "GothamRounded";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/GothamRounded-Medium.otf") format("opentype"),
-    url("../fonts/GothamRounded-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "GothamRounded";
+  src: url("../fonts/GothamRounded-BookItalic/GothamRounded-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GothamRounded-BookItalic/GothamRounded-BookItalic.otf")
+      format("opentype"),
+    url("../fonts/GothamRounded-BookItalic/GothamRounded-BookItalic.woff")
+      format("woff"),
+    url("../fonts/GothamRounded-BookItalic/GothamRounded-BookItalic.ttf")
+      format("truetype"),
+    url("../fonts/GothamRounded-BookItalic/GothamRounded-BookItalic.svg#../fonts/GothamRounded-Book/GothamRounded-BookItalic")
+      format("svg");
+  font-weight: 400;
   font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/GothamRounded-MediumItalic.otf") format("opentype");
 }
 
-p {
+@font-face {
+  font-family: "GothamRounded";
+  src: url("../fonts/GothamRounded-Medium/") format("embedded-opentype"),
+    url("../fonts/GothamRounded-Medium/GothamRounded-Medium.otf")
+      format("opentype"),
+    url("../fonts/GothamRounded-Medium/GothamRounded-Medium.woff")
+      format("woff"),
+    url("../fonts/GothamRounded-Medium/GothamRounded-Medium.ttf")
+      format("truetype"),
+    url("../fonts/GothamRounded-Medium/GothamRounded-Medium.svg#GothamRounded-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamRounded";
+  src: url("../fonts/GothamRounded-MediumItalic/") format("embedded-opentype"),
+    url("../fonts/GothamRounded-MediumItalic/GothamRounded-MediumItalic.otf")
+      format("opentype"),
+    url("../fonts/GothamRounded-MediumItalic/GothamRounded-MediumItalic.woff")
+      format("woff"),
+    url("../fonts/GothamRounded-MediumItalic/GothamRounded-MediumItalic.ttf")
+      format("truetype"),
+    url("../fonts/GothamRounded-MediumItalic/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic")
+      format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+.paragraph {
   color: var(--text_color);
   font-size: 14px;
   font-weight: 500;
@@ -36,7 +64,7 @@ p {
   letter-spacing: 0.25px;
 }
 
-p > .highlight {
+.paragraph > .highlight {
   color: var(--heading_color);
   font-size: inherit;
 }
@@ -53,8 +81,8 @@ h6,
   text-transform: uppercase;
 }
 
-.display_1,
-.display_1 > * {
+.big_text_1,
+.big_text_1 > * {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
@@ -62,8 +90,8 @@ h6,
   letter-spacing: 10px;
 }
 
-.display_2,
-.display_2 > * {
+.big_text_2,
+.big_text_2 > * {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.5;

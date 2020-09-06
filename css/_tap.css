@@ -1,4 +1,4 @@
-.button {
+.tap {
   position: relative;
   border: 0;
   outline: 0;
@@ -6,8 +6,8 @@
   background: transparent;
 }
 
-/* Button primary */
-.button.primary {
+/* tap primary */
+.tap.primary {
   background-color: var(--accent_color);
   padding: 25px;
   color: var(--white_color);
@@ -17,7 +17,7 @@
   letter-spacing: 2.25px;
 }
 
-.button.primary_featured {
+.tap.primary_featured {
   color: var(--white_color);
   font-size: 15px;
   font-weight: 500;
@@ -28,8 +28,8 @@
   border-radius: 6px;
 }
 
-.button.primary_featured:before,
-.button.primary_featured:after {
+.tap.primary_featured:before,
+.tap.primary_featured:after {
   content: "";
   position: absolute;
   left: 0;
@@ -40,7 +40,7 @@
   border-radius: inherit;
 }
 
-.button.primary_featured::before {
+.tap.primary_featured::before {
   background-color: #309383;
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
@@ -52,19 +52,19 @@
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.button.primary_featured::after {
+.tap.primary_featured::after {
   background-color: var(--accent_color);
 }
 
-.button.primary_featured:hover::before {
+.tap.primary_featured:hover::before {
   -webkit-transform: translateY(5px) translateX(3px);
   -ms-transform: translateY(5px) translateX(3px);
   transform: translateY(5px) translateX(3px);
 }
 
-/* Button secondary */
+/* tap secondary */
 
-.button.secondary {
+.tap.secondary {
   border: 1px solid var(--white_color);
   background: transparent;
   color: var(--white_color);
@@ -76,13 +76,13 @@
   letter-spacing: 2.25px;
 }
 
-.button.secondary:hover {
+.tap.secondary:hover {
   background: var(--white_color);
   color: #282828;
 }
 
-/* Button circle */
-.button.circle {
+/* tap circle */
+.tap.circle {
   width: 45px;
   height: 45px;
   color: var(--white_color);
@@ -104,39 +104,39 @@
   line-height: 200px;
 }
 
-.button.circle:hover {
+.tap.circle:hover {
   background-color: var(--accent_color);
 }
 
-.button.circle.primary {
+.tap.circle.primary {
   background-color: var(--accent_color);
 }
 
-/* Button sizes */
-.button.circle.small {
+/* tap sizes */
+.tap.circle.small {
   width: 40px;
   height: 40px;
 }
 
-.button.circle.medium {
+.tap.circle.medium {
   width: 45px;
   height: 45px;
 }
 
-.button.circle.big {
+.tap.circle.big {
   width: 50px;
   height: 50px;
 }
 
-.button.small {
+.tap.small {
   padding: 0.4rem 1rem;
 }
 
-.button.medium {
+.tap.medium {
   padding: 20px 1rem;
 }
 
-.button.big {
+.tap.big {
   padding: 25px 1.5rem;
 }
 

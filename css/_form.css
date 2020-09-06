@@ -1,4 +1,4 @@
-.input {
+form .input {
   background: transparent;
   border: 0;
   font-size: 15px;
@@ -9,61 +9,61 @@
   padding: 0.4rem 1rem;
 }
 
-.input:focus {
+form .input:focus {
   outline: 2px solid var(--accent_color);
 }
 
-.input.light {
+form .input.light {
   border: 1px solid var(--white_color);
   color: var(--white_color);
 }
 
-.input.light::-webkit-input-placeholder {
+form .input.light::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.input.light::-moz-placeholder {
+form .input.light::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.input.light:-ms-input-placeholder {
+form .input.light:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.input.light::-ms-input-placeholder {
+form .input.light::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.input.light::placeholder {
+form .input.light::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.input.dark {
+form .input.dark {
   border: 1px solid var(--dark_color);
   color: var(--dark_color);
 }
 
-.input.dark::-webkit-input-placeholder {
+form .input.dark::-webkit-input-placeholder {
   color: rgba(36, 40, 48, 0.7);
 }
 
-.input.dark::-moz-placeholder {
+form .input.dark::-moz-placeholder {
   color: rgba(36, 40, 48, 0.7);
 }
 
-.input.dark:-ms-input-placeholder {
+form .input.dark:-ms-input-placeholder {
   color: rgba(36, 40, 48, 0.7);
 }
 
-.input.dark::-ms-input-placeholder {
+form .input.dark::-ms-input-placeholder {
   color: rgba(36, 40, 48, 0.7);
 }
 
-.input.dark::placeholder {
+form .input.dark::placeholder {
   color: rgba(36, 40, 48, 0.7);
 }
 
-.input_group {
+form .input_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,20 +77,20 @@
   flex-wrap: nowrap;
 }
 
-.input_group > *:first-child {
+form .input_group > *:first-child {
   margin-right: 5px;
 }
 
 /* Inputs Sizes */
-.input.small {
+form .input.small {
   padding: 0.4rem 1rem;
 }
 
-.input.medium {
+form .input.medium {
   padding: 20px 1rem;
 }
 
-.input.big {
+form .input.big {
   padding: 25px 1.5rem;
 }
 
