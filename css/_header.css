@@ -63,7 +63,7 @@
   color: var(--heading_color);
 }
 
-.header_description {
+.header_description .paragraph {
   color: var(--text_color);
   font-size: 15px;
   font-weight: 400;
