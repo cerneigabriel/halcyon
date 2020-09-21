@@ -99,6 +99,21 @@ $(document).on("click", ".navbar_menu > .item > a", function () {
   $(".navbar_nav").removeClass("active");
 });
 
+$("#search_form").submit(function (event) {
+  event.preventDefault();
+
+  var search_text = $(this).find("[name='search']").val().toLowerCase();
+
+  if (!window.find(search_text))
+    Toast.fire({
+      icon: "error",
+      title: "No results found",
+      timer: 2000,
+    });
+
+  $(".navbar_close").click();
+});
+
 $(function () {
   $(window).scroll(function () {
     var $nav = $(".navbar");
@@ -137,19 +152,4 @@ $("#send_mail_form").submit(function (event) {
       title: "Check for correctness",
     });
   }
-});
-
-$("#search_form").submit(function (event) {
-  event.preventDefault();
-
-  var search_text = $(this).find("[name='search']").val().toLowerCase();
-
-  if (!window.find(search_text))
-    Toast.fire({
-      icon: "error",
-      title: "No results found",
-      timer: 2000,
-    });
-
-  $(".navbar_close").click();
 });
