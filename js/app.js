@@ -27,7 +27,7 @@ $("#slick_slider_blog .slick_slider").slick({
   dots: true,
   appendDots: document.querySelector("#slick_slider_blog .slick_dots"),
   slidesToShow: 3,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   infinte: false,
   loop: false,
   responsive: [
@@ -53,14 +53,14 @@ $("#slick_slider_team .slick_slider").slick({
   dots: true,
   appendDots: document.querySelector("#slick_slider_team .slick_dots"),
   slidesToShow: 3,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   infinte: false,
   loop: false,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
