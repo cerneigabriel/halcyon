@@ -31,9 +31,10 @@
         <div class="navbar_menu">
           <div class="item">
             <div class="input_group">
-              <form action="search.php" method="post">
+              <form action="search.php" method="post" id="search_form">
                 <input
                   type="text"
+                  name="search"
                   class="input light small"
                   placeholder="Search..."
                 />
@@ -61,17 +62,16 @@
           <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
             <div class="header_title">
-              <h1><span>halcyon</span> days</h1>
+              <h1><span>IT</span> company</h1>
             </div>
             <div class="header_description">
               <div class="paragraph">
-                An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-                <span>Codrops</span>.
+                We offer IT solutions for growing companies.
               </div>
             </div>
 
             <a href="" class="tap primary_featured big">
-              Learn More
+              Learn more
               <span class="botton_shadow"></span>
             </a>
           </div>
@@ -80,17 +80,16 @@
           <img src="./images/banners/banner_1.jpg" alt="" />
           <div class="content">
             <div class="header_title">
-              <h1><span>halcyon</span> days</h1>
+              <h1><span>IT</span> company</h1>
             </div>
             <div class="header_description">
               <div class="paragraph">
-                An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-                <span>Codrops</span>.
+                We offer IT solutions for growing companies.
               </div>
             </div>
 
             <a href="" class="tap primary_featured big">
-              Learn More
+              Learn more
               <span class="botton_shadow"></span>
             </a>
           </div>
@@ -104,7 +103,7 @@
           <div class="col-lg-12 p-3">
             <div class="heading">
               <div class="heading_title">
-                <h2>a creative portfolio template</h2>
+                <h2>About what we do and how we do it</h2>
               </div>
               <div class="heading_divider"></div>
             </div>
@@ -115,11 +114,13 @@
                 Sed a lorem quis neque interdum
                 <span class="highlight">consequat ut sed sem</span>. Duis quis
                 tempor nunc. Interdum et malesuada fames ac ante ipsum primis in
-                faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta
-                fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget
-                bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus.
+                faucibus. <span class="highlight">Praesent</span> id tempor
+                ipsum. Fusce at massa ac nunc porta fringilla sed eget neque.
+                <span class="highlight">Quisque</span> quis pretium nulla. Fusce
+                eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.
+                <span class="highlight">Interdum et malesuada fames</span> ac
+                ante ipsum primis in faucibus.
               </div>
             </div>
           </div>
@@ -232,43 +233,50 @@
                       <div class="item">
                         <div class="heading">
                           <div class="heading_title">
-                            <h2>responsive design specialist</h2>
+                            <h2>a goal without a plan is just a wish</h2>
                           </div>
                           <div class="heading_divider"></div>
                         </div>
                         <div class="paragraph">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Nunc ultricies nulla non metus pulvinar
-                          imperdiet. Praesent non adipiscing libero.<br /><br />
-
-                          Mauris ultrices odio vitae nulla ultrices iaculis.
-                          Nulla rhoncus odio eu lectus faucibus facilisis.
-                          Maecenas ornare augue vitae sollicitudin accumsan.<br /><br />
-
-                          Etiam eget libero et erat eleifend consectetur a nec
-                          lectus. Sed id tellus lorem. Suspendisse sed venenatis
-                          odio, quis lobortis eros. <br /><br /><br />
+                          imperdiet. Praesent non adipiscing libero.
                         </div>
                       </div>
                       <div class="item">
                         <div class="heading">
                           <div class="heading_title">
-                            <h2>responsive design specialist</h2>
+                            <h2>SEO oriented specialists</h2>
                           </div>
                           <div class="heading_divider"></div>
                         </div>
                         <div class="paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc ultricies nulla non metus pulvinar
-                          imperdiet. Praesent non adipiscing libero.<br /><br />
-
-                          Mauris ultrices odio vitae nulla ultrices iaculis.
-                          Nulla rhoncus odio eu lectus faucibus facilisis.
-                          Maecenas ornare augue vitae sollicitudin accumsan.<br /><br />
-
-                          Etiam eget libero et erat eleifend consectetur a nec
-                          lectus. Sed id tellus lorem. Suspendisse sed venenatis
-                          odio, quis lobortis eros. <br /><br /><br />
+                          <div class="row px-3">
+                            <div class="col px-3">
+                              <ul type="squre">
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit.
+                                </li>
+                                <li>
+                                  Nunc ultricies nulla non metus pulvinar
+                                  imperdiet.
+                                </li>
+                                <li>
+                                  Praesent non adipiscing libero.Lorem ipsum
+                                  dolor sit amet, consectetur adipiscing elit.
+                                  Nunc ultricies nulla non metus pulvinar
+                                  imperdiet.
+                                </li>
+                                <li>
+                                  Praesent non adipiscing libero. Etiam eget
+                                  libero et erat eleifend consectetur a nec
+                                  lectus. Sed id tellus lorem. Suspendisse sed
+                                  venenatis odio, quis lobortis eros.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -313,7 +321,7 @@
           <div class="slick_slider">
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
                     src="./images/cards/card_4.jpg"
                     class="lightbox_image"
@@ -325,7 +333,7 @@
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">CREATIVE MINDS</div>
+                  <div class="card_title">responsive design</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -338,7 +346,7 @@
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
                     src="./images/cards/card_5.jpg"
                     class="lightbox_image"
@@ -350,7 +358,7 @@
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">THINK ALIKE</div>
+                  <div class="card_title">web development</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -363,7 +371,7 @@
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
                     src="./images/cards/card_6.jpg"
                     class="lightbox_image"
@@ -375,7 +383,7 @@
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">PIXEL PERFECTION</div>
+                  <div class="card_title">time management</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -388,19 +396,19 @@
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
-                    src="./images/cards/card_4.jpg"
+                    src="./images/cards/card_7.jpg"
                     class="lightbox_image"
                     alt=""
                   />
-                  <a href="./images/cards/card_4.jpg" class="lightbox_link">
+                  <a href="./images/cards/card_7.jpg" class="lightbox_link">
                     <i class="fas fa-search"></i>
                     <div class="paragraph"><u>view more</u></div>
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">CREATIVE MINDS</div>
+                  <div class="card_title">Amazon Web Services</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -413,19 +421,19 @@
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
-                    src="./images/cards/card_5.jpg"
+                    src="./images/cards/card_8.jpg"
                     class="lightbox_image"
                     alt=""
                   />
-                  <a href="./images/cards/card_5.jpg" class="lightbox_link">
+                  <a href="./images/cards/card_8.jpg" class="lightbox_link">
                     <i class="fas fa-search"></i>
                     <div class="paragraph"><u>view more</u></div>
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">THINK ALIKE</div>
+                  <div class="card_title">Website structure</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -438,19 +446,19 @@
             </div>
             <div class="item p-3 py-lg-0">
               <div class="card">
-                <div class="card_img lightbox">
+                <div class="card_img_crop lightbox">
                   <img
-                    src="./images/cards/card_6.jpg"
+                    src="./images/cards/card_9.jpg"
                     class="lightbox_image"
                     alt=""
                   />
-                  <a href="./images/cards/card_6.jpg" class="lightbox_link">
+                  <a href="./images/cards/card_9.jpg" class="lightbox_link">
                     <i class="fas fa-search"></i>
                     <div class="paragraph"><u>view more</u></div>
                   </a>
                 </div>
                 <div class="card_content">
-                  <div class="card_title">PIXEL PERFECTION</div>
+                  <div class="card_title">Intercommunication</div>
                   <div class="card_description">
                     <div class="paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -482,7 +490,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" alt="" />
+                  <img src="./images/team/team_1.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
@@ -510,7 +518,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/carsei_lannister.png" alt="" />
+                  <img src="./images/team/team_2.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">CERSEI LANNISTER</div>
@@ -538,7 +546,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/jamie_lannister.png" alt="" />
+                  <img src="./images/team/team_3.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JAMIE LANNISTER</div>
@@ -566,7 +574,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/john_snow.png" alt="" />
+                  <img src="./images/team/team_4.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JON SNOW</div>
@@ -594,7 +602,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/carsei_lannister.png" alt="" />
+                  <img src="./images/team/team_5.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">CERSEI LANNISTER</div>
@@ -622,7 +630,7 @@
             <div class="item p-3 py-lg-0">
               <div class="card">
                 <div class="card_img">
-                  <img src="./images/team/jamie_lannister.png" alt="" />
+                  <img src="./images/team/team_6.png" alt="" />
                 </div>
                 <div class="card_content">
                   <div class="card_title">JAMIE LANNISTER</div>
@@ -665,7 +673,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-6 p-3 input_group">
-            <form action="subscribe.php">
+            <form action="subscribe.php" class="d-flex">
               <input type="text" class="input light big" />
               <button type="submit" class="tap primary big">Send</button>
             </form>
@@ -807,8 +815,8 @@
 
           <div class="col-lg-6 p-3">
             <div class="paragraph">
-              <span class="text_white">Designed & Developed by</span> Peter
-              Finlan <span class="text_white">exclusively for</span> Codrops
+              <span class="text_white">Developed by</span> Cernei Gabriel (PHP
+              Full Stack Web Developer)
             </div>
           </div>
         </div>

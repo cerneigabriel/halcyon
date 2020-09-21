@@ -88,6 +88,7 @@ $(".lightbox_link").magnificPopup({
 
 $(document).on("click", ".navbar_open", function () {
   $(".navbar_nav").addClass("active");
+  document.querySelector("#search_form input[name='search']").focus();
 });
 
 $(document).on("click", ".navbar_close", function () {
@@ -136,4 +137,19 @@ $("#send_mail_form").submit(function (event) {
       title: "Check for correctness",
     });
   }
+});
+
+$("#search_form").submit(function (event) {
+  event.preventDefault();
+
+  var search_text = $(this).find("[name='search']").val().toLowerCase();
+
+  if (!window.find(search_text))
+    Toast.fire({
+      icon: "error",
+      title: "No results found",
+      timer: 2000,
+    });
+
+  $(".navbar_close").click();
 });
